@@ -1,0 +1,132 @@
+.panel-download {
+	width: 260px;
+	height: 45px;
+	padding: 10px;
+	box-sizing: border-box;
+	position: relative;
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.35)
+}
+
+#panelDownloadWrapper {
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+}
+
+.p-d-right-side {
+	width: 80px;
+	display: flex;
+}
+
+.p-d-right-side>* {
+	margin-left: 5px;
+	margin-top: 3px;
+}
+
+.p-d-left-side {
+	display: flex;
+	flex-direction: column;
+}
+
+.stop-start-dwnl-wrap {
+	width: 18px;
+	height: 18px;
+}
+
+.stop-dwnl {
+	background-color: #5d5d5d;
+	width: 18px;
+	height: 18px;
+}
+
+.start-dwnl {
+	border: 9px solid transparent;
+	border-left-width: 18px;
+	border-left-color: #5d5d5d;
+	height: 0;
+	width: 34px;
+}
+
+.close-download {
+	height: 17px;
+	width: 17px;
+	cursor: pointer;
+	display: flex;
+}
+
+.close-download span {
+	color: #5d5d5d;
+	display: block;
+	margin: auto auto;
+	font-size: 24px;
+	line-height: 15px;
+}
+
+.text-wrapper {
+	width: 195px;
+	display: flex;
+	flex-direction: row;
+}
+
+.text-name-wrapper {
+	height: 16px;
+}
+
+.text-name-limiter.size-limiter {
+	max-width: 100px;
+	max-height: 18px;
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.text-dots-wrapper {}
+
+.text-dots-wrapper.load-hide {
+	display: none;
+}
+
+.text-size-wrapper {
+	width: 72px;
+}
+
+.line {
+	height: 5px;
+	width: 195px;
+	background-color: grey;
+	margin: 0 auto;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.color-line-wrapper {
+	height: 100%;
+	overflow: hidden;
+}
+
+.color-line {
+	height: 100%;
+	width: 500px;
+	border-radius: inherit;
+	background-image: none;
+	background-color: #4765c9;
+}
+
+.color-line-animated {
+	background-image: linear-gradient(60deg, #4765c9 30%, #728def 50%, #4765c9 70%);
+	animation-name: progressLine;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes progressLine {
+	0% {
+		background-position-x: 0;
+	}
+	100% {
+		background-position-x: 500px;
+	}
+}

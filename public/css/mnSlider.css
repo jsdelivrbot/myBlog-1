@@ -1,0 +1,150 @@
+.slider{
+	position: relative;
+	overflow: hidden;
+}
+
+.slider-line{
+	position: relative;
+	overflow: hidden;
+	left: 0;
+	transition: all 500ms ease-in-out; /*all Ns F, де N-тривалість виконання анімації переходу в секундах,  F - функція анімації*/
+}
+
+.slider-line2 .slider-block{
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.slider-line3 .slider-block{
+	float: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform-origin: 100% 100%;
+	transition-property: transform;
+}
+
+.slider-line4{
+	transform: perspective(900px);
+}
+
+.slider-block{
+	overflow: hidden;
+	float: left;
+	transition: inherit;
+	z-index: 5;
+}
+
+.button-left, .button-right{
+	position: absolute;
+	z-index: 10;
+}
+
+.button-left{
+	left: 0px;
+}
+
+.button-right{
+	right: 0px;
+}
+
+.status-wrapper{
+	position: absolute;
+	overflow: hidden;
+	z-index: 10;
+}
+
+.status-blocks{
+	float: left;
+}
+
+.hide-opacity{
+	opacity: 0;
+}
+
+.hide-display{
+	display: none;
+}
+
+.rotate{
+	transition-duration: 0s;
+	transform: rotate(90deg);
+}
+
+.toBack{
+	z-index: 4;
+}
+
+.rotate-right{
+	transform: rotateY(179deg);
+}
+
+.rotate-left{
+	transform: rotateY(-179deg);
+}
+
+.not-animate{
+	transition-duration: 0s;
+}
+
+.rotate-right .slider-block, .rotate-left .slider-block{
+	transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* візуальне оформлення */
+.slider{
+	background-color: #424242;
+	margin-bottom: 20px;
+}
+
+.slider:first-child{
+	overflow: hidden;
+}
+
+.button-left, .button-right{
+	bottom: 50%;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-bottom: 20px solid transparent;
+}
+
+.button-left{
+	border-right: 25px solid rgba(10, 9, 9, 0.54);
+}
+
+.button-right{
+	border-left: 25px solid rgba(10, 9, 9, 0.54);
+}
+
+.status-wrapper{
+	top: 5px;
+	left: 100px;
+}
+
+.status-blocks{
+	width: 16px;
+	height: 16px;
+	margin-right: 3px;
+	background-color: #272D27;
+	border-radius: 8px;
+}
+
+.status-wrapper .active{
+	background-color: orange;
+	box-shadow: inset 1px 1px 5px 0px rgb(66, 65, 65);
+}
+/* візуальне оформлення */

@@ -1,0 +1,79 @@
+<% layout("./layout/page") -%>
+<% block('title', locGet("mnCompressionName")) -%>
+<div id="documentationWrapper">
+	<div id="documentationBlock">
+		<h2><%=locGet("mnCompressionName")%></h2>
+		<p><%=locGet("p80")%></p>
+		<div class="my-code">
+			<pre>
+&lt;div class="wrapper-compressor"&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №1&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №2&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №3&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №4&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №5&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №6&lt;/div&gt;
+	&lt;div class="block-compressor"&gt;<%=locGet("p20")%> №7&lt;/div&gt;
+&lt;/div&gt;</pre>
+		</div>
+		<p><%=locGet("p90")%></p>
+		<p><%=locGet("p100")%></p>
+		<p>sort="none"</p>
+		<div class="wrapper-compressor" sort="none">
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b1"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+		</div>
+		<p>sort="height"</p>
+		<div class="wrapper-compressor" sort="height">
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b1"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+		</div>
+		<p>sort="width"</p>
+		<div class="wrapper-compressor" sort="width">
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b1"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+		</div>
+		<p>sort="area"</p>
+		<div class="wrapper-compressor" sort="area">
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b1"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+		</div>
+		<span><%=locGet("download")%> <a href="../public/files/mnCompression.rar" download><%=locGet("mnCompressionName")%></a></span>
+	</div>
+</div>
+
+
+<%-partial("./partials/comments")%>
+

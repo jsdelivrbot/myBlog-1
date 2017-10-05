@@ -1,0 +1,35 @@
+<% layout("./layout/page") -%>
+<% block('title', locGet("mainPageName")) -%>
+
+<div id="documentationWrapper">
+	<div id="documentationBlock">
+		<h2><%=locGet("mnSliderName")%></h2>
+		<div class="slider" sliderType ="4" timeout="2.5">
+			<div class="slider-line">
+				<div class="slider-block"><img src="../public/media/images/1.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/2.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/3.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/4.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/5.jpg"></div>
+			</div>
+		</div>
+		<span><%=locGet("download")%> <a href="../public/files/mnSlider.rar" download><%=locGet("mnSliderName")%></a></span>
+		<h2><%=locGet("mnCompressionName")%></h2>
+		<div class="wrapper-compressor" sort="none">
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b1"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b2"></div>
+			<div class="block-compressor b3"></div>
+			<div class="block-compressor b4"></div>
+			<div class="block-compressor b4"></div>
+		</div>
+		<span><%=locGet("download")%> <a href="../public/files/mnCompression.rar" download><%=locGet("mnCompressionName")%></a></span>
+		<h2><%=locGet("DownloaderName")%></h2>
+		<p><a class="load" href="/public/files/exampleSomeNewFileWithLongName.zip"><%=locGet("p190")%></a></p>
+		<span><%=locGet("download")%> <a href="../public/files/downloader.zip" download><%=locGet("DownloaderName")%></a>, <a href="/public/files/downloaderWithoutPause.zip"><%=locGet("DownloaderName")%></a><%=locGet("p210")%></span>
+	</div>
+</div>

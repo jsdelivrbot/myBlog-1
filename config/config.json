@@ -1,0 +1,26 @@
+{
+	"port": 5000,
+	"mongoose":{
+		"uri": "mongodb://ctep:010395qwe@ds137101.mlab.com:37101/ctepeodb?rs=ds137101",
+		"options":{
+			"server":{
+				"socetOptions":{
+					"keepAlive": 1
+				}
+			}
+		}
+	},
+	"session":{
+		"secret": "KillerIsJim",
+		"key": "sed",
+		"cookie":{
+			"path": "/",
+			"httpOnly": true,
+			"maxAge": null
+		}
+	},
+	"commentsOnePage": 5,
+	"langDeault": "ua",
+	"langListRegExpStr": "ua|ru",
+	"noLocText": "*********"
+}

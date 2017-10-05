@@ -1,0 +1,43 @@
+<article id="commentsWrapper">
+	<div id="commentsBlock">
+		<div id="title-comments">
+			<h2><%=locGet("comments")%></h2>
+		</div>
+		<div class="comments">
+			<% if(comments.length > 0){
+				comments.forEach(function(item) {%>
+				<div class="comment">
+					<div class="author"><span><%=item.user.username%></span></div>
+					<div class="date"><span><%=new Intl.DateTimeFormat("ru", {year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit"}).format(item.created)%></span></div>
+					<% if(user && (item.user._id.equals(user._id) || user.status == "admin")){ -%>
+					<div class="delete-comment">
+						<form name="delete-comment-form" action="">
+							<input type="hidden" name="idComment" value=<%=item._id%>>
+							<span class="delete-error"></span>
+							<button type="submit" class="delete-comment-submit"><%=locGet("deleteComment")%></button>
+						</form>
+					</div><% } -%>
+					<div class="comment-text"><span><%=item.commentText%></span></div>
+				</div> <% })}; %>
+			</div>
+			<div id="commentPages"><% if(countComments > 1)
+				for(var i = 1; i <= countComments; i++){ -%>
+				<div <% if(i == numCommPage){ -%> class="visit" <% } -%>><a href="?page=<%=i%>"><%=i%></a></div>
+				<% } -%>
+			</div>
+
+
+
+
+			<%if(user){ -%>
+			<div id="newComment">
+				<form name="comment-form">
+					<textarea name="commentText" id="commentArea"></textarea>
+					<input type="hidden" name="page" value=<%=page%>>
+					<span class="error"></span>
+					<button type="submit" class=""><%=locGet("sandComment")%></button>
+				</form>
+			</div>
+			<% } -%>
+		</div>
+	</article>

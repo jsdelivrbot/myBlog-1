@@ -1,0 +1,309 @@
+body{
+	margin: 0;
+	padding: 0 0 20px 0;
+}
+
+*{
+	/* outline: 1px solid orange; */
+}
+
+#headerWrapper{
+	width: 100%;
+	height: 85px;
+}
+
+#header{
+	width: 800px;
+	height: 100%;
+	background-color: #263248;
+	border-radius: 0 0 25px 25px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+
+#title h1{
+	float: left;
+	margin: 5px 15px;
+	color:  #999;
+}
+
+#langMenu{
+	float: left;
+}
+
+#langMenu a{
+	text-decoration: none;
+}
+
+#currentLang{
+	color: grey;
+}
+
+#navigationWrapper{
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+#navigation{
+	margin: 0 auto;
+	float: left;
+	background-color: #354260;
+	padding: 0 10px;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+}
+
+#navigation a{
+	display: inline-block;
+	text-decoration: none;
+	float: left;
+}
+
+#navigation a span{
+	line-height: 30px;
+}
+
+#navigation a div{
+	text-align: center;
+}
+
+.navigation-link{
+	height: 30px;
+	padding: 0 9px;
+}
+
+.navigation-link:hover{
+	background-color: #303550;
+}
+
+.navigation-link span{
+	color:  #999;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#userBlock{
+	float: right;
+	margin: 9px 15px 0 0;
+}
+
+#userBlock a{
+	text-decoration: none;
+}
+
+#userBlock a, #userBlock span{
+	color:  #999;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#main{
+}
+
+#regBlock{
+	margin-top: 70px;
+	width: 178px;
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#regBlock input{
+	height: 20px;
+	padding-left: 4px;
+	border-radius: 6px;
+	border: 1px solid #333;
+}
+
+#regBlock input:focus{
+	outline: none;
+	box-shadow: 0 0 1pt 1pt #888;
+}
+
+#regBlock button{
+	color: #fff;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	height: 30px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid #888;
+}
+
+#regBlock button:active{
+	background-color: #256aa7;
+}
+
+.col-1, .col-2{
+	min-height: 30px;
+	float: left;
+}
+
+.row-1, .row-2, .row-3{
+	overflow: hidden;
+	margin-bottom: 20px;
+	padding: 2px;
+}
+
+.row-1 .col-1, .row-2 .col-1{
+	width: 140px;
+}
+
+.row-3 .col-1{
+	max-width: 140px;
+}
+
+.row-3 .col-2{
+	float: right;
+}
+
+.row-3 .col-2{
+	margin-left: 5px;
+}
+
+.col-1 span{
+	line-height: 30px;
+}
+
+#documentationBlock, #aboutBlock{
+	width: 700px;
+}
+
+
+#commentsWrapper, #documentationWrapper, #regBlockWrapper, #aboutWrapper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+#commentsBlock{
+	width: 600px;
+}
+
+#title-comments{
+	margin-top: 30px;
+}
+
+.comment{
+	overflow: hidden;
+}
+
+.comment-text{
+	text-indent: 30px;
+}
+
+.author, .date, .comment-text{
+	float: left;
+}
+
+.author{
+	margin-right: 20px;
+}
+
+.delete-comment-submit{
+	outline: none;
+	border: none;
+	color: red;
+	font-weight: bold;
+	background: none;
+}
+
+.comment{
+	margin-bottom: 25px;
+}
+
+.comment-text{
+	width: 100%;
+	margin-top: 8px;
+}
+
+#commentPages{
+	overflow: hidden;
+	margin: 15px 0;
+	padding-left: 50px;
+}
+
+#commentPages>div{
+	float: left;
+	padding: 2px;
+	margin-right: 8px;
+	border-radius: 3px;
+}
+
+#commentPages>div.visit{
+	background-color: #555;
+}
+
+#commentPages>div>a{
+	text-decoration: none;
+}
+
+#commentArea{
+	width: 100%;
+	height: 100px;
+}
+
+
+#newComment button{
+	outline: none;
+	border: none;
+	height: 25px;
+	border-radius: 6px;
+	background-color: #455270;
+	color: #999;
+}
+
+#newComment button:hover{
+	background-color: #354260;
+}
+
+.my-code{
+	background-color: #FFAAAA;
+	border-radius: 15px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+.my-code pre{
+	margin: 0;
+}
+
+.wrapper-compressor{
+	width: 250px;
+	height: 350px;
+	margin-bottom: 10px;
+}
+
+.wrapper-compressor, .wrapper-compressor div{
+	outline: 1px solid orange;
+}
+
+.wrapper-compressor .b1{
+	width: 250px;
+	height: 100px;
+	background-color: #fff7a5;
+}
+
+.wrapper-compressor .b2{
+	width: 125px;
+	height: 100px;
+	background-color: #ffa5e0;
+}
+
+.wrapper-compressor .b3{
+	width: 125px;
+	height: 50px;
+	background-color: #a5b3ff;
+}
+
+.wrapper-compressor .b4{
+	width: 125px;
+	height: 25px;
+	background-color: #cca5e0;
+}
+
+p{
+	line-height: 18px;
+}

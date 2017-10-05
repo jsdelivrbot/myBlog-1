@@ -1,0 +1,25 @@
+<% layout("./layout/page") -%>
+<% block('title', locGet("regPageName")) -%>
+<div id="regBlockWrapper">
+	<div id="regBlock">
+		<form name="reg-form">
+			<div class="row-1">
+				<div class="col-1"><span><%=locGet("loginForm")%></span></div>
+				<div class="col-2"><input type="text" name="username" class="form-control"></div>
+			</div>
+			<div class="row-2">
+				<div class="col-1"><span><%=locGet("passwordForm")%></span></div>
+				<div class="col-2"><input type="password" name="password" class="form-control"></div>
+			</div>
+			<div class="row-2">
+				<div class="col-1"><span><%=locGet("passwordRepeatForm")%></span></div>
+				<div class="col-2"><input type="password" name="password_repeated" class="form-control"></div>
+			</div>
+			<div class="row-3">
+				<div class="col-2"><button type="submit" class="btn btn-primary"><%=locGet("regText")%></button></div>
+				<div class="col-1 alert alert-danger"><span class="help-block error"></span></div>
+			</div>
+		</form>
+	</div>
+</div>
+<script src="./public/js/reg-script.js"></script>

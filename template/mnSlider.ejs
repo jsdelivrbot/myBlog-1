@@ -1,0 +1,71 @@
+<% layout("./layout/page") -%>
+<% block('title', locGet("mnSliderName")) -%>
+
+<div id="documentationWrapper">
+	<div id="documentationBlock">
+		<h2><%=locGet("mnSliderName")%></h2>
+		<p><%=locGet("p10")%></p>
+		<div class="my-code">
+			<pre>
+&lt;div class="slider"&gt;
+	&lt;div class="slider-line"&gt;
+		&lt;div class="slider-block"&gt;<%=locGet("p20")%> №1&lt;/div&gt;
+		&lt;div class="slider-block"&gt;<%=locGet("p20")%> №2&lt;/div&gt;
+		&lt;div class="slider-block"&gt;<%=locGet("p20")%> №3&lt;/div&gt;
+		&lt;div class="slider-block"&gt;<%=locGet("p20")%> №4&lt;/div&gt;
+		&lt;div class="slider-block"&gt;<%=locGet("p20")%> №5&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+		</div>
+		<p><%=locGet("p30")%></p>
+		<p><%=locGet("p40")%></p>
+		<p><%=locGet("p50")%></p>
+		<p><%=locGet("p60")%></p>
+		<p><%=locGet("p70")%></p>
+		<p>sliderType ="1"</p>
+		<div class="slider" sliderType ="1" timeout="2.5">							
+			<div class="slider-line">
+				<div class="slider-block"><img src="../public/media/images/1.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/2.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/3.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/4.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/5.jpg"></div>
+			</div>
+		</div>
+		<p>sliderType ="2"</p>
+		<div class="slider" sliderType ="2" timeout="2.5">
+			<div class="slider-line">
+				<div class="slider-block"><img src="../public/media/images/1.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/2.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/3.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/4.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/5.jpg"></div>
+			</div>
+		</div>
+		<p>sliderType ="3"</p>
+		<div class="slider" sliderType ="3" timeout="2.5">
+			<div class="slider-line">
+				<div class="slider-block"><img src="../public/media/images/1.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/2.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/3.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/4.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/5.jpg"></div>
+			</div>
+		</div>
+		<p>sliderType ="4"</p>
+		<div class="slider" sliderType ="4" timeout="2.5">
+			<div class="slider-line">
+				<div class="slider-block"><img src="../public/media/images/1.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/2.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/3.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/4.jpg"></div>
+				<div class="slider-block"><img src="../public/media/images/5.jpg"></div>
+			</div>
+		</div>
+		<span><%=locGet("download")%> <a href="../public/files/mnSlider.rar" download><%=locGet("mnSliderName")%></a></span>
+	</div>
+</div>
+
+
+<%-partial("./partials/comments")%>
+

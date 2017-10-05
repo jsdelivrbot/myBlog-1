@@ -1,0 +1,40 @@
+<% layout("./layout/page") -%>
+<% block('title', locGet("DownloaderName")) -%>
+
+<div id="documentationWrapper">
+	<div id="documentationBlock">
+		<h2><%=locGet("DownloaderName")%></h2>
+		<p><%=locGet("p110")%></p>
+		<div class="my-code">
+			<pre>
+&lt;a class="load" href="URL1"&gt;Some Text 1&lt;/a&gt;
+
+&lt;a class="load" href="URL2"&gt;Some Text 2&lt;/a&gt;
+
+&lt;a class="load" href="URL3"&gt;Some Text 3&lt;/a&gt;</pre>
+		</div>
+		<p><%=locGet("p120")%></p>
+		<p><%=locGet("p130")%></p>
+		<p><%=locGet("p140")%></p>
+		<p><%=locGet("p150")%></p>
+		<p><%=locGet("p160")%></p>
+		<div class="my-code">
+			<pre>Content-Disposition: attachment; filename=largeFile.zip</pre>
+		</div>
+		<p><a class="load" href="/streamFile"><%=locGet("p190")%></a></p>
+		<p><%=locGet("p170")%></p>
+		<div class="my-code">
+			<pre>href="/public/largeSomeNewFileWithLongeName.zip"</pre>
+		</div>
+		<p><a class="load" href="/public/files/exampleSomeNewFileWithLongName.zip"><%=locGet("p190")%></a></p>
+		<p><%=locGet("p180")%></p>
+		<p><a class="load2" href="/public/files/exampleSomeNewFileWithLongName.zip"><%=locGet("p190")%></a> <%=locGet("p200")%></p>
+		<span><%=locGet("download")%> <a href="../public/files/downloader.zip" download><%=locGet("DownloaderName")%></a>, <a href="/public/files/downloaderWithoutPause.zip"><%=locGet("DownloaderName")%></a><%=locGet("p210")%></span>
+		
+	</div>
+</div>
+
+<%-partial("./partials/comments")%>
+
+
+

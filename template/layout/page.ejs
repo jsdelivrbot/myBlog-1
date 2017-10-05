@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title><%=blocks.title%></title>
+	<link rel="stylesheet" href="./public/css/app.css">
+	<link rel="stylesheet" href="./public/css/style.css">
+	<link rel="stylesheet" href="./public/css/mnSlider.css">
+	<link rel="stylesheet" href="./public/css/mnCompression.css">
+	<link rel="stylesheet" href="./public/css/downloader.css">
+
+	<script src="./public/vendor/bower_components/jquery/jquery.js"></script>
+	<script src="./public/vendor/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="./public/js/script.js"></script>
+	<script src="./public/js/delete-comment-script.js"></script>
+	<meta charset="UTF-8">
+</head>
+<body>
+
+	<%-partial("../partials/header")%>
+	<main id="main">
+		<%-body -%>
+	</main>
+	<script src="./public/js/mnSlider.js"></script>
+	<script src="./public/js/mnCompression.js"></script>
+	<script src="./public/js/downloader.js"></script>
+	<script src="./public/js/downloaderWithoutPause.js"></script>
+</body>
+</html>

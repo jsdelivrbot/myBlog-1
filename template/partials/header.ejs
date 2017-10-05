@@ -1,0 +1,26 @@
+<header id="headerWrapper">
+	<div id="header">
+		<div id="title"><h1><%=locGet("header")%></h1></div>
+		<div id="langMenu">
+			<% langListString.split("|").forEach(function(el, key, array){ %>
+			<a href=<%= currentPath + "?lang=" + el %> <% if(el == lang){%> id="currentLang" <% } %>><%= el %></a>
+			<% }) %>
+		</div>
+		<div id="userBlock">
+			<% if(user){%>
+			<div id="user"><span><%=user.get("username")%></span><a href="" class="logout"><span>  <%=locGet("loguotText")%></span></a></div>
+			<% }else{%>
+			<div id="loginReg"><a href="/login"><span><%=locGet("loginText")%></span></a><span> / </span><a href="/reg"><span><%=locGet("regText")%></span></a></div>
+			<% }%>
+		</div>
+		<div id="navigationWrapper">
+			<div id="navigation">
+				<a href="/"><div class="navigation-link"><span><%=locGet("mainPageName")%></span></div></a>
+				<a href="/mnSlider"><div class="navigation-link"><span><%=locGet("mnSliderName")%></span></div></a>
+				<a href="/mnCompression"><div class="navigation-link"><span><%=locGet("mnCompressionName")%></span></div></a>
+				<a href="/downloader"><div class="navigation-link"><span><%=locGet("DownloaderName")%></span></div></a>
+				<a href="/about"><div class="navigation-link"><span><%=locGet("aboutPageName")%></span></div></a>
+			</div>
+		</div>
+	</div>
+</header>
