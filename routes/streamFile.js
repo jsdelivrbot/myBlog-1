@@ -5,7 +5,7 @@ exports.get = function (req, response) {
 	var stat = fs.statSync(filePath);
 	response.setHeader('Content-Length', stat.size);
 	response.setHeader('Content-Type', 'image/jpg');
-	response.setHeader('Content-Disposition', 'attachment; filename=largeFile.zip');
+	//response.setHeader('Content-Disposition', 'attachment; filename=exampleSomeNewFileWithLongName.zip');
 
 	stream.pipe(response);
 
